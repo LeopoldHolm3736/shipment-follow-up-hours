@@ -1,0 +1,21 @@
+{
+  "name": "shipment-follow-up-hours",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/follow_up_service.ts",
+    "register": "tsx src/register_hourly_sweep.ts",
+    "stop": "tsx src/stop_hourly_sweep.ts",
+    "test": "tsx --test test/follow_up_policy.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
